@@ -41,7 +41,7 @@ public class MovieRentalManager implements MovieStorage {
         List<Movie> movies = getMoviesFromCache(customer);
         // Try to get data from cache first
         if (movies.isEmpty()) {
-            // If cache is empty try to get data foov storage
+            // If cache is empty try to get data from storage
             if (movieStorage != null) {
                 // Get rental movies from the storage if it is configured by setter
                 List<Movie> moviesFromStorage = movieStorage.getMovies(customer);

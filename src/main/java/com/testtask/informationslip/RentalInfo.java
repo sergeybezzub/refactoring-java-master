@@ -10,6 +10,7 @@ import static com.testtask.informationslip.constant.MovieRentalData.NEW;
 
 import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 /**
  * Provides rental information of customer
@@ -25,7 +26,7 @@ public class RentalInfo {
   public static final String TAB = "\t";
 
   public String statement(Customer customer) {
-    HashMap<String, Movie> movies = new HashMap<>();
+    Map<String, Movie> movies = new HashMap<>();
 
     List<Movie> moviesList = MovieRentalManager.getInstance().getMovies(customer);
 

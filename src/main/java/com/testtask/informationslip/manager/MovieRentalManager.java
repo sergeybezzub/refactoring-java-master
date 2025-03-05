@@ -96,7 +96,7 @@ public class MovieRentalManager implements MovieStorage {
     }
 
     /**
-     * Set some implementation to persist customer rental information for example ti database
+     * Set some implementation to persist customer rental information for example to database
      *
      * @param movieStorage any implementation of interface to persist data
      */
